@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+.header img{
+    margin: 8px 30px;
+    padding: 5px;
+    height: 70px;
+    width: 170px;
+}
+.nav{
+    display: flex;
+    padding: 8px;
+    height: 50px;
+    width: 350px;
+    justify-content: space-between;
+    align-self: center;
+    text-align: center;
+    font-size: 23px;
+    /* border: 1px solid green; */
+}
+.nav-item {
+    color: rgb(9, 9, 9);
+    text-decoration: none;
+}
+.nav-item:hover{
+    border-bottom: 3px solid #8071d0 ;
+}
+.header button{
+    margin-right: 15px;
+    margin-top: 10px;
+    border-style: none;
+    border-radius: 25px;
+    height: 60px;
+    width: 150px;
+    color:  #5243c0;
+    background-color: pink;
+    cursor: pointer;
+}
+.header button:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px #989393;
+}
+.MainContent{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.txt-Area{
+    height: 580px;
+}
+.mainheading h1{
+    margin-left: 90px;
+    font-size: 6vw;
+    font-weight: bold;
+}
+.mainheading p{
+    margin-left: 100px;
+    font-size: 20px;
+}
+.button-Area{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 100px;
+    height: 80px;
+}
+.button-Area button{
+    margin-right: 15px;
+    margin-top: 10px;
+    border-style: none;
+    border-radius: 25px;
+    height: 60px;
+    width: 150px;
+    color: pink;
+    background-color:  #5243c0;
+    cursor: pointer;
+}
+.button-Area button:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px #1c153e;
+}
+.button-Area img{
+    margin-left: 15px;
+}
+.img-Area {
+    height: 580px;
+    width: 100%;
+}.img-Area img {
+    height: 580px;
+    width: 100%;
+}
+.mainheading .dot{
+    margin-left: 5px;
+    display: inline-block;
+    align-items: end;
+    border: 1px solid #5243c0;
+    background-color: #5243c0;
+    height: 10px;
+    width: 10px;
+}
+.table-section{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 769px){
+.table-section {
+    width: 320px;
+}
+}
+.table-section .card{
+    display: flex;
+    width: 82%;
+    background-color: rgb(247, 244, 239);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
+    border-radius: 35px;
+    margin: 3px 0;
+    translate: 100px 0px;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover{
+    background-color: white;
+    box-shadow: 2px 2px 10px gray;
+    transform: scale(1.01);
+}
+
+@media screen and (max-width: 769px){
+.table-section .card {
+    height: 40px;
+    width: 82%;
+    padding: 4px;
+}
+}
+.first{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.first img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.first .tick-gray{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; 
+}
+.first .hover-tick{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: none;
+}
+.card:hover > .first > .tick-gray{
+    display: none;
+}
+.card:hover > .first > .hover-tick{
+    display: block;
+}
+.first > p{
+    margin-left: 20px;
+}
+.second{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+.second > .color-bar{
+    margin-right: 20px;
+    width: 40px;
+    height: 15px;
+    border-radius: 20px;
+    background-color:  #fed7da;
+}
+.second > .color-bar2{
+    margin-right: 20px;
+    width: 40px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #fd6534;
+}
+.second > .color-bar3{
+    margin-right: 20px;
+    width: 40px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #9ed095;
+}
+.second > .color-bar4{
+    margin-right: 20px;
+    width: 40px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #ffe4a0;
+}
